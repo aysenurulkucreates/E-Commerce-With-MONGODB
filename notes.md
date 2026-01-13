@@ -14,7 +14,10 @@
 - Code yazarken async await mantığını sakın unutma.
 - # DEFAULT kullanımı çok önemli, şema yapılarında.
 - const { password, ...others } = user.\_doc; şifelemeden sonra bunu gşirmen lazım APIRESTTE. Eğer o others (yani kullanıcı bilgileri) paketini göndermezsen; Kullanıcı giriş yapar ama ekran hala boş bakar. React "Tamam girdik de... Kim girdi? Adı ne? Ne göstereyim?" diye kalır.
-- JWT eklemen şart, çünkü tarayıcı balık hafızalıdır ve ona giril kimliği vermen lazım, pasaport gibi düiün süresi var .
+- JWT eklemen şart, çünkü tarayıcı balık hafızalıdır ve ona giril kimliği vermen lazım, pasaport gibi düiün süresi var.
+- $set ile mongodb ye güncellemek için katı kural veriyorsun, sadece yanın ayazdığım şeyi gübcelle diyorsun, yoksa her eşyi kendince yeni bir paket haline getirir. new: true demezsen de güncellediği şeyi sana çıktı olarak vermez ve sen de güncellemedi sanarsın.
+- Br de sakın $set. req.boy gibi genel bir şey yazma, değiştirmek istediklerini düzgünce obje halinde var, yoksa çok fena güvenlik açığı.
+- Bearer "Bu bir tokendır" diye sisteme haber veren evrensel bir etikettir.
 
 ## İNDİRDİĞİM PAKETLER!
 
