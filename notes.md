@@ -10,6 +10,11 @@
 - Dosyaları görevlere ayırman gerek, routes, controller olarak. rotesta get, post,put delete şlemleri yaparsın ve bunalrı ana dosyana tanıtırsın, mutlaka export etemn gerek yoksa ana dosyan okuyamaz. 'app.use()' şeklinde okut, öncesinde import etmeyi unutma.
 - Tarayıcıya "Bana ver" diyorsan -> GET
 - Tarayıcıya "Al bunu veritabanına koy" diyorsan -> POST
+- Eğer APIREST yapıyorsan models bölümüğ açıp içine schemaları oluşturman lazım artık ne geriyorsa, cart, orders, user, product vs gibi.
+- Code yazarken async await mantığını sakın unutma.
+- # DEFAULT kullanımı çok önemli, şema yapılarında.
+- const { password, ...others } = user.\_doc; şifelemeden sonra bunu gşirmen lazım APIRESTTE. Eğer o others (yani kullanıcı bilgileri) paketini göndermezsen; Kullanıcı giriş yapar ama ekran hala boş bakar. React "Tamam girdik de... Kim girdi? Adı ne? Ne göstereyim?" diye kalır.
+- JWT eklemen şart, çünkü tarayıcı balık hafızalıdır ve ona giril kimliği vermen lazım, pasaport gibi düiün süresi var .
 
 ## İNDİRDİĞİM PAKETLER!
 
@@ -17,6 +22,8 @@
 - mongoose
 - dotenv
 - nodemon
+- bcrypt
+- jsonwebtoken
 
 ## HANGİ SORUN ÇIKTI VE NE YAZINCA DÜZELDİ!
 
