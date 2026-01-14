@@ -29,6 +29,7 @@
 - nodemon
 - bcrypt
 - jsonwebtoken
+- stripe
 
 ## HANGİ SORUN ÇIKTI VE NE YAZINCA DÜZELDİ!
 
