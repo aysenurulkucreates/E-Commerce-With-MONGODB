@@ -19,6 +19,7 @@
 - Br de sakın $set. req.boy gibi genel bir şey yazma, değiştirmek istediklerini düzgünce obje halinde var, yoksa çok fena güvenlik açığı.
 - Bearer "Bu bir tokendır" diye sisteme haber veren evrensel bir etikettir.
 - Kullanıcı (React) -> Route (Adres) -> Middleware (Güvenlikçi) -> Controller (Beyin) -> Database (Depo).
+- findById komutu ile aradığında () içine direk id yi olduğu gibi yazarsın ama findOne() metodunda mongodb ye genel bir komut verdiğin için {} obje içine yazıp ne istediğini yazman gerekir.
 
 ## İNDİRDİĞİM PAKETLER!
 
